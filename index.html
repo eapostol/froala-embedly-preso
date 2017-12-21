@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hack Days Project 2017 - Froala, Embed.ly Investigation & Results</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body { font-family: 'Droid Serif'; font-size: large }
+        h1, h2, h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: normal;
+        }
+        .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: large }
+    </style>
+</head>
+<body>
+<textarea id="source">
+
+class: center, middle
+
+# Project "EMBED THIS"
+
+---
+
+# Agenda
+
+1. Introduction
+2. Use-Cases
+3. What Was Done?
+4. Long Term Plan
+5. Deep-dive
+6. Pain Points
+7. Conclusion, Q & A
+
+---
+
+# Introduction
+
+Organizers want to share decks, videos, twitter feeds, and other rich
+content throughout the event app. Froala (the RTE used in Experience
+Manager) supports Embed.ly, which promises to allow content from 500+
+sources to be embedded simply by clicking a button and pasting a URL.
+This would be a proof of concept for using Embed.ly to enable planners
+to embed rich content throughout the app (e.g., anywhere they can use
+the HTML editor)
+
+---
+
+# Use Cases
+
+Use Case: According to some folks in Sales, a great selling point for
+the app would be to embed in a session description a related video for
+the conference. For example, reminders of gala events for all attendees
+in the evening, or a video reminding people of next year's conference
+(i.e. good for advertising)
+
+---
+
+    # What was Done?
+
+    Investigation into
+
+    - The Froala Editor and how it works
+    - Embed.ly and how it works
+    - The Iris Platform (as an optional additional goal)
+    - How Froala works in the EventMobi platform
+
+---
+
+class: center, middle
+
+# Deep Dive
+![test image](deep_diver.jpg)
+
+---
+
+# The Long Term Plan
+
+    - Edward, draw on the board
+
+---
+
+# The Long Term Plan Summary
+
+    - Launch Froala Editor with Embed.ly plugin built-in
+    - Allow embedding of default content
+    - Determine how to incorporate live streaming through an external player
+
+---
+
+
+# Pain Points
+
+    - Embed.ly does not work with Froala Editor V1 (90 min + email)
+    - Node and NPM "Hell" - Shonkwrap, Froala requirements, debugging npm install errors
+    (time sucking)
+    - Current Version of Froala - 2.73
+    - Froala Editor requires Angular-Froala - also 2.73
+    - Why did we not upgrade to 2.x? (investigation)
+    - Several layers to figure out the setup: Froala to Angular-Froala to Angular to "EM" Angular (I am stuck here)
+
+---
+
+# Conclusion, Q & A
+
+    - Better understanding of these technologies
+    - Better understanding of the challenges we have maintaining our node/npm related libraries
+    and impact
+
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js">
+</script>
+<script>
+    var slideshow = remark.create();
+</script>
+</body>
+</html>
